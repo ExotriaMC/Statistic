@@ -84,15 +84,40 @@
     font-size:  xx-large;
     font-family: Impact, sans-serif;
     height: 40px;
-    color: #f5f6fa;
+    color: #fff; /*f5f6fa*/
     background: #1abc9c;
     overflow: hidden;
     border-radius: 10px;
-    border: hidden;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    outline: none
+    outline: none;
+    border: 1px solid #1abc9c;
+    transition: 0.8s;
+}
+
+#keke::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #1abc9c;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+
+#keke:hover {
+    background: #fff;
+    cursor: pointer;
+    color: #1abc9c;
+}
+
+#keke:hover::before {
+    height: 0%;
 }
 
 #ranking {
