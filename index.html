@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Exotria Studie</title>
+</head>
+<body>
+    <div id="Gesamt">
+        <p>
+            <img id="Logo" src="./images/ExotriaStatsLogo.png" alt="Exotria Statistics Logo">
+        </p>
+        <div class="spacer"></div>
+        <div class="Container">
+            <p>
+                <img id="AufgabenS" src="./images/AufgabenSchrift.png" alt="Aufgabenverteilung in Exotria">
+            </p>
+            <p>
+                <img id="Aufgaben" src="./images/Aufgaben.png" alt="Aufgabenverteilung in Exotria">
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="Container">
+            <p>
+                <img id="ZeitS" src="./images/ZeitSchrift.png" alt="Gegebene Zeit für das Jeweilige Team">
+            </p>
+            <p>
+                <img id="Zeit" src="./images/Zeit.png" alt="Gegebene Zeit für das Jeweilige Team">
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <form action="https://formspree.io/f/xgedkvrn" method="POST" id="Schätzung" class="on">
+            <div class="form-group">
+                <button id="UmfrageText">Umfrage</button>
+              <div id="question"><label id="q" for="ranking"><strong>Ohne zu gucken - Wie würdest du die Rangliste von Exotria einschätzen? Wo würdest du den Content Rang plazieren von 0-20? 0 = ganz unten, 20 = ganz oben!</strong> (Danach öffnet sich die weitere Statisktik)</label></div>
+              <div class="spacer"></div>
+              <p><input type="text" id="ranking" name="ranking"></p>
+            </div>
+            <p>
+                <button id="keke" type="submit" onclick="displayRanking()">Schätzung Abgeben</button></p>
+          </form>
+        <div class="Container">
+            <div id="Teamranking" class="off">
+                <p>
+                    <img id="TrFont" src="./images/TrFont.png" alt="Teamranking title">
+                </p>
+                <p>
+                    <img id="Ranking" src="./images/Teamranking.png" alt="Team ranking">
+                </p>
+            </div>
+        </div>
+        <p>
+            <!-- <img id="info" src="./images/info.png" alt=""> -->
+            <strong id="i">*Wichtig: Alle diese Quellen sind vom 12.2.2022 (Ende der Aufgabenwoche)</strong>
+        </p>
+    </div>
+</body>
+</html>
